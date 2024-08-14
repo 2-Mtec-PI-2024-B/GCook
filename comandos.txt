@@ -7,3 +7,10 @@ Executar, no terminal, 1 por vez, em ordem:
     dotnet new sln --name GCook
     dotnet sln add GCook\GCook.csproj
 
+dotnet tool install --global dotnet-ef --version 8.0.8
+
+Criar migrações
+dotnet ef migrations add criar-banco
+
+Executar migração e alterar o banco de dados
+dotnet ef database update
